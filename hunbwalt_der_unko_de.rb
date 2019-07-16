@@ -30,11 +30,11 @@ Plugin.create(:hunbwalt_der_unko_de) do
           visible: true,
           role: :timeline) do |opt|
     opt.messages.each do |message|
-      Plugin.call(:der_unko, message)
+      Plugin.call(:der_unko_de, message)
     end
   end
 
-  on_der_unko do |message|
+  on_der_unko_de do |message|
     msg = '@' + message.user.idname
     loop do
       n_msg =  ' ' + greets.sample
