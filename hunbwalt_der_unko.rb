@@ -1,31 +1,31 @@
 # frozen_string_literal: true
 
-Plugin.create(:hunbwalt_der_unko) do
+Plugin.create(:hunbwalt_der_unko_de) do
   greets = %w[
-    イッヒフンバルト
-    デル
-    ウンコ
-    ハイル！
-    フンデルベン！
-    ミーデルベン！
-    ヘーヒルト
-    ベンデル！
-    フンバルト
-    ヘーデル！
-    ベンダシタイナー！フンデルト
-    モレル
-    ケッツカラデルド！
-    フンベン
-    モルゲン！
-    モーデルワ
-    イッヒ
-    アーデル
-    ゲーベン！
-    ワーデル！
+    Ichiehunwalt
+    der
+    Unko
+    Heil!
+    Hunderben!
+    Miederben!
+    hähild
+    Wendel!
+    hunwalt
+    Hödel!
+    Bendaschteiner! hundert
+    Morrel
+    Ketzkerdeld
+    hunwen
+    Morgen!
+    Modelwar
+    ich
+    adel
+    Geben!
+    Wadel!
   ].freeze
 
-  command(:hunbwalt_der_unko,
-          name: 'イッヒフンバルトデルウンコ',
+  command(:hunbwalt_der_unko_de,
+          name: 'Ich hunwalte der Unko.',
           condition: ->(_opt) { true },
           visible: true,
           role: :timeline) do |opt|
